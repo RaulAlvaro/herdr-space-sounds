@@ -10,7 +10,13 @@ Herdr's `done` status marks the end of an agent turn, which may be only one step
 - Herdr 0.9.0 or newer
 - Node.js 24.3 or newer (runs the TypeScript source without a build step)
 
-## Try the MVP
+## Install from GitHub
+
+Before installing, open Herdr Settings with the default `Ctrl+B`, then `s`, and turn off Herdr's built-in sound alerts to avoid hearing two sounds for one event. You can keep system toast notifications enabled. Then run `herdr plugin install RaulAlvaro/herdr-space-sounds` and `herdr plugin enable space-sounds`.
+
+Focus a project Space and run `herdr plugin action invoke space-sounds.assign-1`. Repeat in two other projects with `space-sounds.assign-2` and `space-sounds.assign-3`. Run `herdr plugin action invoke space-sounds.preview` in each focused Space to hear both sounds.
+
+## Try a local checkout
 
 1. Link this checkout disabled: `herdr plugin link /absolute/path/to/herdr-setting-spaces-sound --disabled`.
 2. Inside Herdr, press the default `Ctrl+B`, then `s`, to open Settings. Turn off sound alerts there before enabling this plugin. Herdr has its own sound toggle, so editing a file is optional. You may keep system toast notifications enabled for native macOS visual notifications.

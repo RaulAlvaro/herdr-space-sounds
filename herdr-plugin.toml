@@ -1,0 +1,34 @@
+id = "space-sounds"
+name = "Space Sounds MVP"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Distinct local macOS sounds for Herdr Spaces"
+platforms = ["macos"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["node", "src/main.ts", "event"]
+
+[[actions]]
+id = "assign-1"
+title = "Use sound 1 in this Space"
+contexts = ["workspace"]
+command = ["node", "src/main.ts", "assign", "1"]
+
+[[actions]]
+id = "assign-2"
+title = "Use sound 2 in this Space"
+contexts = ["workspace"]
+command = ["node", "src/main.ts", "assign", "2"]
+
+[[actions]]
+id = "assign-3"
+title = "Use sound 3 in this Space"
+contexts = ["workspace"]
+command = ["node", "src/main.ts", "assign", "3"]
+
+[[actions]]
+id = "preview"
+title = "Preview this Space's sounds"
+contexts = ["workspace"]
+command = ["node", "src/main.ts", "preview"]
